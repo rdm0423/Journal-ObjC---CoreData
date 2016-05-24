@@ -13,6 +13,9 @@
 		FFB921361CF4DC06002D38C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFB921351CF4DC06002D38C8 /* Assets.xcassets */; };
 		FFB921391CF4DC06002D38C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB921371CF4DC06002D38C8 /* LaunchScreen.storyboard */; };
 		FFB921421CF4DD1C002D38C8 /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB921411CF4DD1C002D38C8 /* Stack.m */; };
+		FFB921451CF4E136002D38C8 /* EntryListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB921441CF4E136002D38C8 /* EntryListTableViewController.m */; };
+		FFB921481CF4E145002D38C8 /* DetailEntryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB921471CF4E145002D38C8 /* DetailEntryTableViewController.m */; };
+		FFB9214D1CF4E16D002D38C8 /* EntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB9214C1CF4E16D002D38C8 /* EntryController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		FFB9213A1CF4DC06002D38C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFB921401CF4DD1C002D38C8 /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
 		FFB921411CF4DD1C002D38C8 /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
+		FFB921431CF4E136002D38C8 /* EntryListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryListTableViewController.h; sourceTree = "<group>"; };
+		FFB921441CF4E136002D38C8 /* EntryListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryListTableViewController.m; sourceTree = "<group>"; };
+		FFB921461CF4E145002D38C8 /* DetailEntryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailEntryTableViewController.h; sourceTree = "<group>"; };
+		FFB921471CF4E145002D38C8 /* DetailEntryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailEntryTableViewController.m; sourceTree = "<group>"; };
+		FFB9214B1CF4E16D002D38C8 /* EntryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryController.h; sourceTree = "<group>"; };
+		FFB9214C1CF4E16D002D38C8 /* EntryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +69,9 @@
 			children = (
 				FFB9212C1CF4DC06002D38C8 /* AppDelegate.h */,
 				FFB9212D1CF4DC06002D38C8 /* AppDelegate.m */,
-				FFB921401CF4DD1C002D38C8 /* Stack.h */,
-				FFB921411CF4DD1C002D38C8 /* Stack.m */,
+				FFB921491CF4E14B002D38C8 /* View Controllers */,
+				FFB9214E1CF4E171002D38C8 /* Controller */,
+				FFB9214A1CF4E156002D38C8 /* Stack */,
 				FFB921321CF4DC06002D38C8 /* Main.storyboard */,
 				FFB921351CF4DC06002D38C8 /* Assets.xcassets */,
 				FFB921371CF4DC06002D38C8 /* LaunchScreen.storyboard */,
@@ -77,6 +87,35 @@
 				FFB9212A1CF4DC06002D38C8 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFB921491CF4E14B002D38C8 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FFB921431CF4E136002D38C8 /* EntryListTableViewController.h */,
+				FFB921441CF4E136002D38C8 /* EntryListTableViewController.m */,
+				FFB921461CF4E145002D38C8 /* DetailEntryTableViewController.h */,
+				FFB921471CF4E145002D38C8 /* DetailEntryTableViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		FFB9214A1CF4E156002D38C8 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				FFB921401CF4DD1C002D38C8 /* Stack.h */,
+				FFB921411CF4DD1C002D38C8 /* Stack.m */,
+			);
+			name = Stack;
+			sourceTree = "<group>";
+		};
+		FFB9214E1CF4E171002D38C8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FFB9214B1CF4E16D002D38C8 /* EntryController.h */,
+				FFB9214C1CF4E16D002D38C8 /* EntryController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,8 +188,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFB921481CF4E145002D38C8 /* DetailEntryTableViewController.m in Sources */,
 				FFB921421CF4DD1C002D38C8 /* Stack.m in Sources */,
+				FFB9214D1CF4E16D002D38C8 /* EntryController.m in Sources */,
 				FFB9212E1CF4DC06002D38C8 /* AppDelegate.m in Sources */,
+				FFB921451CF4E136002D38C8 /* EntryListTableViewController.m in Sources */,
 				FFB9212B1CF4DC06002D38C8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
