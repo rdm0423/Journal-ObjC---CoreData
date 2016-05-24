@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EntryController.h"
 
 @interface DetailEntryTableViewController : UITableViewController
+
+@property (strong, nonatomic) Entry *entry;
 
 @end

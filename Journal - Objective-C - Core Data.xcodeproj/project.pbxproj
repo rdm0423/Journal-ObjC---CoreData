@@ -16,6 +16,9 @@
 		FFB921451CF4E136002D38C8 /* EntryListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB921441CF4E136002D38C8 /* EntryListTableViewController.m */; };
 		FFB921481CF4E145002D38C8 /* DetailEntryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB921471CF4E145002D38C8 /* DetailEntryTableViewController.m */; };
 		FFB9214D1CF4E16D002D38C8 /* EntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB9214C1CF4E16D002D38C8 /* EntryController.m */; };
+		FFB921511CF4E2B9002D38C8 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FFB9214F1CF4E2B9002D38C8 /* Model.xcdatamodeld */; };
+		FFB921571CF4E424002D38C8 /* Entry+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB921541CF4E424002D38C8 /* Entry+CoreDataProperties.m */; };
+		FFB921581CF4E424002D38C8 /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB921561CF4E424002D38C8 /* Entry.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,11 @@
 		FFB921471CF4E145002D38C8 /* DetailEntryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailEntryTableViewController.m; sourceTree = "<group>"; };
 		FFB9214B1CF4E16D002D38C8 /* EntryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryController.h; sourceTree = "<group>"; };
 		FFB9214C1CF4E16D002D38C8 /* EntryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryController.m; sourceTree = "<group>"; };
+		FFB921501CF4E2B9002D38C8 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		FFB921531CF4E424002D38C8 /* Entry+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Entry+CoreDataProperties.h"; path = "../Entry+CoreDataProperties.h"; sourceTree = "<group>"; };
+		FFB921541CF4E424002D38C8 /* Entry+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Entry+CoreDataProperties.m"; path = "../Entry+CoreDataProperties.m"; sourceTree = "<group>"; };
+		FFB921551CF4E424002D38C8 /* Entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Entry.h; path = ../Entry.h; sourceTree = "<group>"; };
+		FFB921561CF4E424002D38C8 /* Entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Entry.m; path = ../Entry.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +79,7 @@
 				FFB9212D1CF4DC06002D38C8 /* AppDelegate.m */,
 				FFB921491CF4E14B002D38C8 /* View Controllers */,
 				FFB9214E1CF4E171002D38C8 /* Controller */,
-				FFB9214A1CF4E156002D38C8 /* Stack */,
+				FFB921521CF4E2BE002D38C8 /* Model */,
 				FFB921321CF4DC06002D38C8 /* Main.storyboard */,
 				FFB921351CF4DC06002D38C8 /* Assets.xcassets */,
 				FFB921371CF4DC06002D38C8 /* LaunchScreen.storyboard */,
@@ -116,6 +124,19 @@
 				FFB9214C1CF4E16D002D38C8 /* EntryController.m */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		FFB921521CF4E2BE002D38C8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FFB921531CF4E424002D38C8 /* Entry+CoreDataProperties.h */,
+				FFB9214F1CF4E2B9002D38C8 /* Model.xcdatamodeld */,
+				FFB921541CF4E424002D38C8 /* Entry+CoreDataProperties.m */,
+				FFB921551CF4E424002D38C8 /* Entry.h */,
+				FFB921561CF4E424002D38C8 /* Entry.m */,
+				FFB9214A1CF4E156002D38C8 /* Stack */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,7 +211,10 @@
 			files = (
 				FFB921481CF4E145002D38C8 /* DetailEntryTableViewController.m in Sources */,
 				FFB921421CF4DD1C002D38C8 /* Stack.m in Sources */,
+				FFB921571CF4E424002D38C8 /* Entry+CoreDataProperties.m in Sources */,
+				FFB921581CF4E424002D38C8 /* Entry.m in Sources */,
 				FFB9214D1CF4E16D002D38C8 /* EntryController.m in Sources */,
+				FFB921511CF4E2B9002D38C8 /* Model.xcdatamodeld in Sources */,
 				FFB9212E1CF4DC06002D38C8 /* AppDelegate.m in Sources */,
 				FFB921451CF4E136002D38C8 /* EntryListTableViewController.m in Sources */,
 				FFB9212B1CF4DC06002D38C8 /* main.m in Sources */,
@@ -344,6 +368,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FFB9214F1CF4E2B9002D38C8 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FFB921501CF4E2B9002D38C8 /* Model.xcdatamodel */,
+			);
+			currentVersion = FFB921501CF4E2B9002D38C8 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FFB9211E1CF4DC06002D38C8 /* Project object */;
 }
