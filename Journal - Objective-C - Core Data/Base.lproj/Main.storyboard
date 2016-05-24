@@ -9,7 +9,7 @@
         <!--Journal-->
         <scene sceneID="WRU-xd-Mqf">
             <objects>
-                <tableViewController id="RQF-uA-l1z" sceneMemberID="viewController">
+                <tableViewController id="RQF-uA-l1z" customClass="EntryListTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="GDO-iD-5og">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -47,7 +47,7 @@
         <!--Title-->
         <scene sceneID="dNR-08-5KT">
             <objects>
-                <tableViewController id="Zyh-GQ-7BG" sceneMemberID="viewController">
+                <tableViewController id="Zyh-GQ-7BG" customClass="DetailEntryTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="w8x-ho-j6W">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -121,6 +121,9 @@
                                                     <state key="normal" title="CLEAR">
                                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="clearButtonTapped:" destination="Zyh-GQ-7BG" eventType="touchUpInside" id="O19-HS-d1K"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -138,8 +141,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Title" id="Qta-P2-U8G">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="eDJ-BA-BLi"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="eDJ-BA-BLi">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="Zyh-GQ-7BG" id="kX4-8k-j4p"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="bodyTextField" destination="WoW-oB-if1" id="EF3-rS-OTn"/>
+                        <outlet property="titleTextField" destination="xT5-m7-z4P" id="2gb-8T-jbq"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oHQ-qk-Aqk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
